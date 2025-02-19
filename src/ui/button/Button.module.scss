@@ -1,34 +1,31 @@
 .button {
-	width: 210px;
-	height: 50px;
 	display: flex;
-	cursor: pointer;
-	box-sizing: border-box;
-	text-align: center;
 	justify-content: center;
 	align-items: center;
+	box-sizing: border-box;
+	width: 210px;
+	height: 50px;
+	text-align: center;
 	border: 1px solid #000000;
-	transition: background 0.3s ease, transform 0.2s ease;
-	user-select: none;
-	outline: none;
+	cursor: pointer;
 }
 
-.button:hover {
-	background: var(--gold, #ffc802);
-	transform: scale(1.05);
+.button_apply {
+	background-color: #ffc802;
 }
 
-.button:active {
-	background: var(--gold, #ffc802);
-	transform: scale(0.95);
+.button_clear {
+	background-color: white;
 }
 
-.button:focus {
-	border-color: #ff0000;
-	box-shadow: 0 0 5px #ff0000;
+.button_apply:hover {
+	background-color: #ffedab;
 }
 
-.button.disabled {
-	opacity: 0.5;
-	pointer-events: none;
+.button_clear:hover {
+	background-color: #000000;
+}
+
+.button_clear:hover div {
+	color: white;
 }

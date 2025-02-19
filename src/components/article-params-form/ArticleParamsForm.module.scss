@@ -1,36 +1,17 @@
-.bottomContainer {
-	justify-content: space-between;
-	display: flex;
-	margin-top: auto;
-}
-
-.form {
-	width: 100%;
-	height: auto;
-	padding: 50px;
-	display: flex;
-	gap: 50px;
-	flex-direction: column;
-	box-sizing: border-box;
-	background-color: #ffffff;
-	border-right: 1px solid #000000;
-}
-
-.arrow {
-	height: 48px;
-	width: 48px;
-	transition: transform 0.5s ease;
-}
-
 .container {
+	position: fixed;
 	left: 0;
 	width: 616px;
 	height: 100%;
-	position: fixed;
-	overflow: scroll;
+	overflow: hidden;
 	background-color: #ffffff;
-	transform: translateX(-616px);
+	transform: translateX(-616px); /* Скрытое положение */
 	transition: transform 0.5s ease;
+}
+
+.container_open {
+	cursor: pointer;
+	transform: translateX(0); /* Выезжающий блок */
 }
 
 .closeButton {
@@ -38,7 +19,26 @@
 	cursor: pointer;
 }
 
-.container_open {
-	transform: translateX(0);
-	cursor: pointer;
+.arrow {
+	width: 48px;
+	height: 48px;
+	transition: transform 0.5s ease;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	box-sizing: border-box;
+	width: 100%;
+	height: auto;
+	padding: 50px;
+	background-color: #ffffff;
+	border-right: 1px solid #000000;
+}
+
+.bottomContainer {
+	display: flex;
+	justify-content: space-between;
+	margin-top: auto;
 }

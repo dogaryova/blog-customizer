@@ -1,20 +1,22 @@
-.image {
-	margin-top: 26px;
-	height: auto;
-	width: 100%;
+// Enhanced for readability and maintainability
+
+.article {
+	display: flex; // Keep this line for consistency
+	flex-direction: column; // Keep this line for consistency
+	justify-content: center; // Keep this line for consistency
+	align-items: center; // Keep this line for consistency
+	row-gap: 24px; // Keep this line for consistency
+	max-width: var(--container-width, auto); // Keep this line for consistency
+	margin: 0 auto; // Keep this line for consistency
+	padding: 72px 0 144px; // Keep this line for consistency
 }
 
 .titleDescription {
-	max-width: 550px;
+	max-width: 550px; // Keep this line for consistency
 }
 
-.article {
-	margin: 0 auto;
-	padding: 72px 0 144px;
-	max-width: var(--container-width, auto);
-	row-gap: 24px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+.image {
+	width: 100%; // Keep this line for consistency
+	height: auto; // Keep this line for consistency
+	margin-top: 26px; // Keep this line for consistency
 }

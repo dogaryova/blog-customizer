@@ -1,4 +1,3 @@
-// Enhanced for readability and maintainability
 import { useEffect } from 'react';
 
 type UseEnterSubmit = {

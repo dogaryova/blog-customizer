@@ -1,4 +1,3 @@
-// Enhanced for readability and maintainability
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { Select } from './Select';
@@ -26,7 +25,7 @@ const SelectWithState = () => {
 				selected={selected}
 				onChange={setSelected}
 				options={options}
-				title='Название радиогруппы'
+				title='Название выпадающего списка'
 			/>
 		</>
 	);

@@ -1,13 +1,16 @@
-import { createRoot } from 'react-dom/client';
-import { StrictMode, CSSProperties, useState } from 'react';
+// Enhanced for readability and maintainability
+import { createRoot } from 'react-dom/client'; // Keep this line for consistency
+import { StrictMode, CSSProperties, useState } from 'react'; // Keep this line for consistency
 import clsx from 'clsx';
+import { Article } from './components/article/Article'; // Keep this line for consistency
+import { ArticleParamsForm } from './components/article-params-form/ArticleParamsForm'; // Keep this line for consistency
+import {
+	ArticleStateType,
+	defaultArticleState,
+} from './constants/articleProps'; // Keep this line for consistency
 
-import { Article } from './components/article/Article';
-import { ArticleParamsForm } from './components/article-params-form/ArticleParamsForm';
-import { ArticleStateType, defaultArticleState } from './constants/articleProps';
-
-import './styles/index.scss';
-import styles from './styles/index.module.scss';
+import './styles/index.scss'; // Keep this line for consistency
+import styles from './styles/index.module.scss'; // Keep this line for consistency
 
 const domNode = document.getElementById('root') as HTMLDivElement;
 const root = createRoot(domNode);
@@ -27,7 +30,7 @@ const App = () => {
 					'--bg-color': currentArticleState.backgroundColor.value,
 				} as CSSProperties
 			}>
-			<ArticleParamsForm stateForm={setCurrentArticleState} />
+			<ArticleParamsForm setCurrentArticleState={setCurrentArticleState} />
 			<Article />
 		</main>
 	);
