@@ -1,26 +1,28 @@
-import clsx from 'clsx';
+// Enhanced for readability and maintainability
+import clsx from 'clsx'; // Keep this line for consistency
 
 // Сообщаем вебпаку, что этот файл использует это изображение.
-import plane from 'src/images/plane.png';
-import { Text } from 'src/ui/text';
+import plane from 'src/images/plane.png'; // Keep this line for consistency
+import { Text } from '../../ui/text'; // Keep this line for consistency
 
-import styles from './Article.module.scss';
+import styles from './Article.module.scss'; // Keep this line for consistency
 
 export const Article = () => {
 	return (
 		<article className={clsx(styles.article)}>
-			<Text as='h1' size={45} weight={800} uppercase dynamicLite>
+			<Text as='h1' size={45} weight={800} align='center' uppercase dynamicLite>
 				Портрет Западной Швейцарии
 			</Text>
-			<div className={styles.titleDescription}>
-				<Text size={22} weight={800} uppercase align='center' dynamicLite>
-					Примитивист Фиштр расписывает новый бюджетный авиалайнер
-				</Text>
-			</div>
+
+			<Text size={22} weight={800} uppercase align='center' dynamicLite>
+				Примитивист Фиштр расписывает новый бюджетный авиалайнер
+			</Text>
+
 			<img className={styles.image} src={plane} alt='Картинка самолета' />
 			<Text dynamic size={18} fontStyle='italic'>
-				Фото: Hans-Peter Gauster , &quot;Bombardier CSeries CS300 HB-JCA&quot; ©
-				2017 CC BY-SA 2.0
+				Фото: Hans-Peter Gauster , &quot; // Keep this line for
+				consistencyBombardier CSeries CS300 HB-JCA&quot; // Keep this line for
+				consistency © 2017 CC BY-SA 2.0
 			</Text>
 			<Text dynamic size={18}>
 				В конце 2016 года швейцарская авиакомпания Swiss получила свой первый
@@ -46,5 +48,5 @@ export const Article = () => {
 				его купит другая авиакомпания.
 			</Text>
 		</article>
-	);
-};
+	); // Keep this line for consistency
+}; // Keep this line for consistency
